@@ -2,6 +2,7 @@ package com.innovationredefined.myanmarzawgyisupporttest1;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
+import android.graphics.Typeface;
 import android.os.Build;
 import android.os.Environment;
 import android.support.v4.app.ActivityCompat;
@@ -44,6 +45,9 @@ public class MainActivity extends AppCompatActivity {
 
 
         TextView textView = findViewById(R.id.textview);
+        Typeface tf_mm3 = Typeface.createFromAsset(getAssets(), "fonts/ZawgyiOne.ttf");
+        textView.setTypeface(tf_mm3);
+
         textView.setText(text);
     }
 
